@@ -10,10 +10,10 @@
 </script>
 
 <?php
-for ($i = 1; $i < 21; $i++) {
+for ($i = 38; $i < 39; $i++) {
     for ($j = 1; $j < 49; $j++) {
         ?>
-        <img id="image_<?php echo $i . "_" . $j; ?>" src="split/image_<?php echo $i . "_" . $j; ?>.png"/>
+        <!--<img id="image_<?php echo $i . "_" . $j; ?>" src="split/image_<?php echo $i . "_" . $j; ?>.png"/>-->
         <?php
     }
     echo '<br/>';
@@ -21,15 +21,16 @@ for ($i = 1; $i < 21; $i++) {
 ?>
 
 <div class="picMainDiv">
-    <?php for ($i = 1; $i < 21; $i++) { ?>
+    <?php for ($i = 1; $i < 49; $i++) { ?>
         <div class="picMainDiv picRow">
             <?php for ($j = 1; $j < 49; $j++) { ?>
-                <div id="coldv_<?php echo $i . "_" . $j; ?>" class="colDiv"></div>
+                <div id="coldv_<?php echo $i . "_" . $j; ?>" row="<?php echo $i; ?>" col="<?php echo $j; ?>" class="colDiv"></div>
             <?php } ?>
         </div>
     <?php } ?>
 </div>
 
+<input type="button" onclick="drawCharacter();" value="Randomize"/>
 <div>
     <div class="colshadediv cshade1"></div>
     <div class="colshadediv cshade2"></div>

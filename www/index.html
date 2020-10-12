@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    </head>
+    <body onload="" class="noselect ">
+
+        <div class="picMainDiv">
+            
+        </div>
+        
+        <input type="button" onclick="drawCharacter();" value="Randomize"/>
+        
+        <!-- Small modal -->
+        <div class="modal fade bs-example-modal-sm2 noselect" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="diaHint">
+                        <div id="divGetHelp" class="diaButton a_demo_four" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Loading ad">Get friends help?</div>
+                        <div id="divRevealAns" class="diaButton a_demo_four">Watch advert to Reveal answer</div>
+                        <div id="divAdNotAvailable" class="hide" style="width: 100%">Advert not available, Try after some time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bs-success-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div>
+                        <img class="divCongo" src="./images/congo.png" alt="logo"/>
+                    </div>
+                    <div>
+                        <img class="divLvlUp" src="./images/levelup.png" alt="logo"/>
+                    </div>
+                    <i class="fa fa-share-alt iconfa fa-3" onclick="socialShare();"></i>
+                    <i class="fa fa-forward iconfa fa-3"></i>
+                    <div id="divRateUsGi">
+                        <a href="https://play.google.com/store/apps/details?id=com.mjapps.vocabularyquiz"><img class="divRateUs" src="./images/rateusgi.gif" alt="logo" onclick="localStorage.setItem('rateUsClicked', 'true')"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/lib/logic.js"></script>
+        
+    </body>
+</html>
