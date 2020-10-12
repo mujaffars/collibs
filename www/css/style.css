@@ -2,13 +2,22 @@
     clear: both;
 }
 .colDiv{
-    height: 1.25em;
-    width: 1.25em;
+    height: 0.43em;
+    width: 0.43em;
     float: left;
 }
-
 
 .colshadediv{
     height: 20px;
     width: 50px;
+}
+
+.divBtns{
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.divBtns input{
+    font-size: 1em;
 }
